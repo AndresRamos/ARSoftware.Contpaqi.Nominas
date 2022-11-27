@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>false</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Version>1.0.0</Version>
+		<Authors>AR Software</Authors>
+		<Description>Entity Framework DbContexts para hacer query las bases de datos de CONTPAQi Nominas</Description>
+		<Copyright>Copyright © AR Software 2022</Copyright>
+		<RepositoryUrl>https://github.com/AndresRamos/ARSoftware.Contpaqi.Nominas</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/AndresRamos/ARSoftware.Contpaqi.Nominas</PackageProjectUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>Contpaqi Sql Nominas</PackageTags>
+		<PackageLicenseExpression>(MIT)</PackageLicenseExpression>
+		<PackageIcon>AR_LOGO03.jpg</PackageIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\..\images\AR_LOGO03.jpg">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+</Project>
