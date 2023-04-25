@@ -84,6 +84,12 @@ public partial class ContpaqiNominasGeneralesDbContext : DbContext
 
     public virtual DbSet<Nom60000> Nom60000 { get; set; }
 
+    public virtual DbSet<Nom70000> Nom70000 { get; set; }
+
+    public virtual DbSet<Nom80000> Nom80000 { get; set; }
+
+    public virtual DbSet<Nom90000> Nom90000 { get; set; }
+
     public virtual DbSet<NomIDX> NomIDX { get; set; }
 
     public virtual DbSet<NomIdiom> NomIdiom { get; set; }
@@ -873,6 +879,47 @@ public partial class ContpaqiNominasGeneralesDbContext : DbContext
             entity.HasKey(e => new { e.NumeroTabla, e.NumeroColumna, e.NumeroRenglon });
 
             entity.Property(e => e.Fecha).HasColumnType("datetime");
+        });
+
+        modelBuilder.Entity<Nom70000>(entity =>
+        {
+            entity.HasKey(e => e.idTabla);
+
+            entity.HasIndex(e => e.FechaVigencia, "IDXFECHAVIGENCIA");
+
+            entity.HasIndex(e => e.Nombre, "IDXNOMBRE");
+
+            entity.Property(e => e.FechaVigencia).HasColumnType("datetime");
+            entity.Property(e => e.Nombre)
+                .HasMaxLength(40)
+                .IsUnicode(false);
+            entity.Property(e => e.TimeStamp)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+        });
+
+        modelBuilder.Entity<Nom80000>(entity =>
+        {
+            entity.HasKey(e => e.idDetalleTabla);
+
+            entity.HasIndex(e => e.idTabla, "IDXIDTABLA");
+
+            entity.Property(e => e.DescripcionRango)
+                .HasMaxLength(40)
+                .IsUnicode(false);
+            entity.Property(e => e.TimeStamp)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+        });
+
+        modelBuilder.Entity<Nom90000>(entity =>
+        {
+            entity.HasIndex(e => e.Id, "IDXID");
+
+            entity.Property(e => e.Fecha).HasColumnType("datetime");
+            entity.Property(e => e.TimeStamp)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
         });
 
         modelBuilder.Entity<NomIDX>(entity =>
