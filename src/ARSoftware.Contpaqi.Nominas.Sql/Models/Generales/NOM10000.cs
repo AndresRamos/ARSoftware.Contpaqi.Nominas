@@ -160,4 +160,6 @@ public partial class NOM10000
     public int TipoCalculoISR { get; set; }
 
     public string NombreEmpresaFiscal { get; set; } = null!;
+
+    public byte CriterioPrestacion { get; set; }
 }

@@ -663,6 +663,7 @@ public partial class ContpaqiNominasGeneralesDbContext : DbContext
             entity.Property(e => e.CodigoPostal)
                 .HasMaxLength(5)
                 .IsUnicode(false);
+            entity.Property(e => e.CriterioPrestacion).HasDefaultValueSql("((2))");
             entity.Property(e => e.CuentaCWGlobal)
                 .HasMaxLength(31)
                 .IsUnicode(false);
