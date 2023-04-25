@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARSoftware.Contpaqi.Nominas.Sql", "src\ARSoftware.Contpaqi.Nominas.Sql\ARSoftware.Contpaqi.Nominas.Sql.csproj", "{E439D972-D7F1-4190-877E-3A18966ECB93}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sql.MigrationsStartupProject", "src\Sql.MigrationsStartupProject\Sql.MigrationsStartupProject.csproj", "{80C1F14B-27D2-46DA-9177-9E3E143E9706}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E439D972-D7F1-4190-877E-3A18966ECB93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E439D972-D7F1-4190-877E-3A18966ECB93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E439D972-D7F1-4190-877E-3A18966ECB93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80C1F14B-27D2-46DA-9177-9E3E143E9706}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80C1F14B-27D2-46DA-9177-9E3E143E9706}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80C1F14B-27D2-46DA-9177-9E3E143E9706}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80C1F14B-27D2-46DA-9177-9E3E143E9706}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
