@@ -7,8 +7,8 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Version>2.0.0</Version>
 		<Authors>AR Software</Authors>
-		<Description>Entity Framework DbContexts para hacer query las bases de datos de CONTPAQi Nominas</Description>
-		<Copyright>Copyright © AR Software 2022</Copyright>
+		<Description>Entity Framework DbContexts para hacer query las bases de datos de CONTPAQi Nominas version 15.0.1</Description>
+		<Copyright>Copyright © AR Software 2023</Copyright>
 		<RepositoryUrl>https://github.com/AndresRamos/ARSoftware.Contpaqi.Nominas</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/AndresRamos/ARSoftware.Contpaqi.Nominas</PackageProjectUrl>
 		<RepositoryType>git</RepositoryType>
